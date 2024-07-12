@@ -5,6 +5,12 @@ const posts = require("../data/posts");
 
 // Get all posts
 router.get("/", (req, res) => {
+  const limit = req.query.limit;
+  console.log(limit, "limit");
+  if (limit && limit < posts.length) {
+    res.json(posts.slice(0, limit));
+    return;
+  }
   res.json(posts);
 });
 
