@@ -5,6 +5,12 @@ const comments = require("../data/comments");
 
 // Get all comments
 router.get("/", (req, res) => {
+  const userId = req.query.userId;
+  if (userId) {
+    const userComments = comments.filter((c) => c.userId == userId);
+    res.json(userComments);
+    return;
+  }
   res.json(comments);
 });
 
