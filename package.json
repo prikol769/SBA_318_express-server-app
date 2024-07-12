@@ -1,0 +1,26 @@
+{
+  "name": "sba_318_express-server-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prikol769/SBA_318_express-server-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prikol769/SBA_318_express-server-app/issues"
+  },
+  "homepage": "https://github.com/prikol769/SBA_318_express-server-app#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
